@@ -1,0 +1,8 @@
+.form-container{
+	display: flex;
+	flex-flow: column;
+	.new-visit-button{
+		margin-top: 20px;
+		align-self: flex-end;
+	}
+}

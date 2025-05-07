@@ -1,0 +1,68 @@
+//Variables
+
+//Light Theme variables
+$primary-color: #4d5e3e;
+$secondary-color: #ffd4d4;
+$background-color: #dadada;
+
+//Dark Theme variables
+$primary-color-dark: #4d5e3e;
+$secondary-color-dark: #ffb6b6;
+$background-color-dark: #0000004d;
+
+[data-theme='dark'] {
+	body {
+		background-color: $background-color-dark;
+	}
+	--bs-body-bg: #4d5e3e;
+	--bs-body-color: whitesmoke;
+}
+
+body {
+	margin: 0;
+	background-color: $background-color;
+	#root {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+.vet-app {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
+	> .navbar {
+		margin-bottom: 20px;
+	}
+	.layout {
+		flex-grow: 1;
+		.content {
+			margin-top: 15px;
+			.table-card {
+				width: 80%;
+				max-height: 80%;
+				margin: auto;
+				padding: 20px 20px;
+				.table-title {
+					margin-bottom: 10px;
+				}
+				.actions-column {
+					display: flex;
+					gap: 5px;
+				}
+				@media (max-width: 767px) {
+					width: 100%;
+				}
+			}
+			@media (max-width: 767px) {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.MuiTablePagination-toolbar {
+	p {
+		margin-bottom: 0;
+	}
+}

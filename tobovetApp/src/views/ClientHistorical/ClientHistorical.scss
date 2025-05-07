@@ -1,0 +1,104 @@
+.client-historical .historical-card {
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+	padding-bottom: 50px;
+	.info-card {
+		width: 100%;
+	}
+	.header {
+		align-items: center;
+		.logo {
+			height: 230px;
+		}
+		.pet-info {
+			margin-top: 30px;
+			.header-info {
+				font-size: 16pt;
+				display: flex;
+				gap: 5px;
+				align-items: center;
+				padding-top: 2px;
+				padding-bottom: 2px;
+			}
+		}
+		.company-info {
+			margin-top: 30px;
+			> div {
+				display: flex;
+				gap: 10px;
+				padding: 2px 0;
+			}
+		}
+	}
+	.info-card {
+		.form-select {
+			width: 200px;
+			color: white;
+			background-color: #4d5e3e;
+			border-color: #4d5e3e;
+			border-radius: 0;
+			font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+			font-weight: 500;
+			font-size: 0.875rem;
+			option {
+				font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+				font-weight: 500;
+				font-size: 0.875rem;
+			}
+		}
+	}
+	.button-group {
+		margin-top: 20px;
+		justify-content: center;
+		.col {
+			padding: 0;
+			max-width: fit-content;
+			min-width: fit-content;
+		}
+	}
+	.main-buttons {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		justify-content: end;
+		box-shadow:
+			0 3px 6px rgba(0, 0, 0, 0.16),
+			0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+
+	.visits-list {
+		.visit-card {
+			padding: 20px 30px;
+			border: 1px solid #4d5e3e;
+			border-radius: 10px;
+			justify-content: center;
+			.header {
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+			.info-group {
+				align-self: center;
+				justify-content: center;
+				margin-bottom: 20px;
+				.info {
+					display: flex;
+					gap: 15px;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+			.visit-info {
+				margin-left: 50px;
+			}
+		}
+		.bottom-line {
+			margin: 40px auto;
+			width: 50%;
+			justify-self: center;
+			border-bottom: 2px dashed #4d5e3e;
+		}
+	}
+}

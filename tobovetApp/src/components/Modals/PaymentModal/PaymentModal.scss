@@ -1,0 +1,32 @@
+.receipt-modal-content {
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	overflow-y: auto;
+	max-height: 90vh;
+	.header{
+		margin-bottom: 40px;
+	}
+	.client-info {
+		text-align: end;
+	}
+
+	.mucho-texto {
+		margin-top: 20px;
+		font-size: 0.8rem;
+	}
+
+	.form-input {
+		margin: 20px 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.receipt-modal-content {
+		width: 740px;
+		//Put the modal in the center of the screen (Yikes)
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

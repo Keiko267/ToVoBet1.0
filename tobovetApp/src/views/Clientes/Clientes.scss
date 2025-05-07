@@ -1,0 +1,33 @@
+.vet-app .layout .content .clients {
+	.table-card {
+		width: 100%;
+	}
+}
+
+.client-modal {
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+	h5 {
+		margin-bottom: 20px;
+	}
+	@media (max-width:991px){
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 767px) {
+	div.form-container div.form-content > div.form-input-container {
+		div.form-input,
+		.MuiAutocomplete-root,
+		.MuiFormControl-root {
+			width: 180px;
+		}
+	}
+}
+
+.filters {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+}

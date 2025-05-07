@@ -1,0 +1,49 @@
+div.document-to-print-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 700px;
+	width: 800px;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	overflow-y: scroll;
+	#document-to-print-content {
+		display: flex;
+		flex-flow: column;
+		padding: 0 50px;
+		.header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 40px;
+			.logo {
+				height: 140px;
+				width: 140px;
+			}
+		}
+		.title {
+			margin-bottom: 20px;
+		}
+		.pet-description {
+			margin-left: 30px;
+			margin-bottom: 30px;
+			margin-top: 10px;
+		}
+		.date {
+			align-self: end;
+			margin-right: 30px;
+		}
+		.signatures {
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.button-group {
+			margin-top: 100px;
+			align-self: end;
+			display: flex;
+			gap: 5px;
+		}
+	}
+}

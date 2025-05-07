@@ -1,0 +1,16 @@
+.tab-group {
+	display: flex;
+	gap: 15px;
+	font-size: 18pt;
+	color: darkslategrey;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	div {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+	.tab-selected {
+		color: #4d5e3e;
+		border-bottom: 1px solid #4d5e3e;
+	}
+}
